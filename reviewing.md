@@ -41,10 +41,6 @@ Review the `PRODUCT.yaml` file, and:
    Offerings" section of the vendor's Participation Form, i.e. that the `name`
    and `website_url` are listed.
 
-4. Review the `name`. If it contains the word "Kubernetes" in a non-descriptive
-   fashion, verify that the `name` is listed in "Participant Kubernetes
-   Combinations" section of the vendor's Participation Form.
-
 If the submission doesn't meet all policy requirements, reply with a message
 indicating "Signed participation form needed", "Files missing from PR",
 "Membership in CNCF or confirmation of non-profit status needed", etc.
