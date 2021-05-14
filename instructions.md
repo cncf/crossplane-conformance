@@ -21,10 +21,10 @@ Deploy a Sonobuoy pod to your cluster with:
 xp_version=1.2
 
 # To validate the conformance of a Crossplane distribution.
-sonobuoy run --plugin https://raw.githubusercontent.com/crossplane/conformance/${xp_version}/plugin-crossplane.yaml
+sonobuoy run --plugin https://raw.githubusercontent.com/crossplane/conformance/release-${xp_version}/plugin-crossplane.yaml
 
 # To validate the conformance of a Crossplane provider.
-sonobuoy run --plugin https://raw.githubusercontent.com/crossplane/conformance/${xp_version}/plugin-provider.yaml
+sonobuoy run --plugin https://raw.githubusercontent.com/crossplane/conformance/release-${xp_version}/plugin-provider.yaml
 
 # To view the status of the conformance tests.
 sonobuoy status
