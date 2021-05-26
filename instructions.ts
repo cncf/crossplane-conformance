@@ -42,7 +42,7 @@ outfile=$(sonobuoy retrieve)
 mkdir ./results; tar xzf ${outfile} -C ./results
 ```
 
-> two required submission are located the tarball as
+> two required submission are located the tarball
 > `plugins/crossplane-conformance/results/global/{report.log,report.xml}`.
 
 To clean up Kubernetes objects created by Sonobuoy, run:
@@ -80,7 +80,7 @@ vX.Y/$dir/PRODUCT.yaml: See below.
 #### PRODUCT.yaml
 
 This file describes your product. It is YAML formatted the following
-root-level fields. Please fill as appropriate.
+root-level fields. Please fill appropriate.
 
 | Field               | Description                                                                                                                                                                                       |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
