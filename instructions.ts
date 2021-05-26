@@ -2,48 +2,47 @@
 
 ## The tests
 
-The standard set of conformance tests is currently those defined by the
+The standard conformance tests is currently those defined by the
 [crossplane/conformance] Sonobuoy plugin.
 
 ## Running
 
-The standard tool for running these tests is [Sonobuoy]. Download a [binary
-release] of the CLI, or build it yourself by running:
+The standard tool running these tests is [Sonobuoy]. Download a [binary
+release] the CLI, or build it yourself by running:
 
 ```console
 go get -u -v github.com/vmware-tanzu/sonobuoy
 ```
 
-Deploy a Sonobuoy pod to your cluster with:
+Deploy Sonobuoy pod to your cluster with:
 
 ```console
-# The version of Crossplane your wish to validate conformance against.
+# The version Crossplane your wish to validate conformance against.
 xp_version=1.2
 
-# To validate the conformance of a Crossplane distribution.
+# To validate the conformance Crossplane distribution.
 sonobuoy run --plugin https://raw.githubusercontent.com/crossplane/conformance/release-${xp_version}/plugin-crossplane.yaml
 
-# To validate the conformance of a Crossplane provider.
+# To validate the conformance Crossplane provider.
 sonobuoy run --plugin https://raw.githubusercontent.com/crossplane/conformance/release-${xp_version}/plugin-provider.yaml
 
-# To view the status of the conformance tests.
+# To view the status conformance tests.
 sonobuoy status
 
 # To view Sonobuoy logs.
 sonobuoy logs
 ```
 
-Once `sonobuoy status` shows the run as `completed`, copy the output directory
-from the main Sonobuoy pod to a local directory:
+Once `sonobuoy status` shows run `completed`, copy output directory main Sonobuoy pod local directory:
 
 ```console
 outfile=$(sonobuoy retrieve)
 
-# Extract the contents into `./results`
+# Extract contents `./results`
 mkdir ./results; tar xzf ${outfile} -C ./results
 ```
 
-> The two files required for submission are located in the tarball as
+> two required submission are located the tarball as
 > `plugins/crossplane-conformance/results/global/{report.log,report.xml}`.
 
 To clean up Kubernetes objects created by Sonobuoy, run:
@@ -55,22 +54,22 @@ sonobuoy delete
 ## Uploading
 
 Prepare a PR in this repository. Here are [directions] to prepare a pull request
-from a fork. In the descriptions below, `X.Y` refers to the Crossplane major and
-minor version, and `$dir` is a short subdirectory name to hold the results for
+from a fork. the descriptions below, `X.Y` refers to the Crossplane major and
+minor version, and `$dir` is a short subdirectory name to hold the results
 your product. Examples would be `distribution/coolplane` or `provider/pizza`.
 
-Description: `Conformance results for vX.Y/$dir`
+Description: `Conformance results vX.Y/$dir`
 
 ### Contents of the PR
 
 For simplicity you can submit the tarball or extract the relevant information
 from the tarball to compose your submission.
 
-If submitting test results for multiple versions, submit a PR for each product,
+ submitting test results for multiple versions, submit a PR each product,
 ie. one PR for vX.Y results and a second PR for vX.Z
 
 ```
-vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
+vX.Y/$dir/README.md: A script or human-readable description how to reproduce
 your results.
 vX.Y/$dir/sonobuoy.tar.gz: Raw output from sonobuoy. (optional)
 vX.Y/$dir/report.log: Test log output (from Sonobuoy).
@@ -80,18 +79,18 @@ vX.Y/$dir/PRODUCT.yaml: See below.
 
 #### PRODUCT.yaml
 
-This file describes your product. It is YAML formatted with the following
-root-level fields. Please fill in as appropriate.
+This file describes your product. It is YAML formatted the following
+root-level fields. Please fill as appropriate.
 
 | Field               | Description                                                                                                                                                                                       |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `vendor`            | Name of the legal entity that is certifying. This entity must have a signed participation form on file with the CNCF.                                                                             |
-| `name`              | Name of the product being certified.                                                                                                                                                              |
-| `version`           | The version of the product being certified (not the version of Crossplane it runs).                                                                                                               |
+| `vendor`            | Name the legal entity that is certifying. This entity must have a signed participation form on file with the CNCF.                                                                             |
+| `name`              | Name the product being certified.                                                                                                                                                              |
+| `version`           | The version the product being certified (not the version Crossplane it runs).                                                                                                               |
 | `website_url`       | URL to the product information website.                                                                                                                                                           |
 | `repo_url`          | If your product is open source, this field is necessary to point to the primary GitHub repo containing the source. It's OK if this is a mirror. OPTIONAL.                                         |
 | `documentation_url` | URL to the product documentation.                                                                                                                                                                 |
-| `product_logo_url`  | URL to the product's logo, (must be in SVG, AI or EPS format -- not a PNG -- and include the product name). OPTIONAL. If not supplied, we'll use your company logo. Please see [logo guidelines]. |
+| `product_logo_url`  | URL to the product's logo, (must be SVG, AI or EPS format -- not a PNG -- and include the product name). OPTIONAL. If not supplied, we'll use your company logo. Please see [logo guidelines]. |
 | `type`              | Is your product a distribution of Crossplane or a Crossplane provider? (Specify one of `distribution` or `provider`.)                                                                             |
 | `description`       | One sentence description of your offering.                                                                                                                                                        |
 
@@ -113,9 +112,9 @@ description: "Coolplane is the coolest distribution of Crossplane."
 ## Amendment for Private Review
 
 If you need a private review for an unreleased product, please email a zip file
-containing what you would otherwise submit as a pull request to
+containing what you would otherwise submit a pull request to
 conformance@cncf.io. We'll review and confirm that you are ready to be Certified
-Crossplane as soon as you open the pull request. We can then often arrange to
+Crossplane soon you open the pull request. We can then often arrange to
 accept your pull request soon after you make it, at which point you become
 Certified Crossplane.
 
