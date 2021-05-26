@@ -14,7 +14,7 @@ release] the CLI, or build it yourself by running:
 go get -u -v github.com/vmware-tanzu/sonobuoy
 ```
 
-Deploy Sonobuoy pod to your cluster with:
+Deploy Sonobuoy pod to your cluster :
 
 ```console
 # The version Crossplane your wish to validate conformance against.
@@ -53,20 +53,20 @@ sonobuoy delete
 
 ## Uploading
 
-Prepare a PR in this repository. Here are [directions] to prepare a pull request
+Prepare a PR this repository. Here are [directions] to prepare a pull request
 from a fork. the descriptions below, `X.Y` refers to the Crossplane major and
-minor version, and `$dir` is a short subdirectory name to hold the results
+minor version, `$dir` short subdirectory to the results
 your product. Examples would be `distribution/coolplane` or `provider/pizza`.
 
 Description: `Conformance results vX.Y/$dir`
 
-### Contents of the PR
+### Contents the PR
 
 For simplicity you can submit the tarball or extract the relevant information
 from the tarball to compose your submission.
 
- submitting test results for multiple versions, submit a PR each product,
-ie. one PR for vX.Y results and a second PR for vX.Z
+IF submitting test results multiple versions, submit a PR each product,
+ie. one PR vX.Y results and a second PR vX.Z
 
 ```
 vX.Y/$dir/README.md: A script or human-readable description how to reproduce
