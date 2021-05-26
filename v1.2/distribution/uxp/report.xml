@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="18" failures="0" time="350.550" name="">
+		<properties>
+			<property name="go.version" value="go1.16.4"></property>
+		</properties>
+		<testcase classname="" name="TestCompositeResourceDefinition" time="10.070"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinition/BecomesEstablishedAndOffered" time="10.010"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinition/CRDIsCreatedForXR" time="0.020"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinition/CRDIsCreatedForXRC" time="0.010"></testcase>
+		<testcase classname="" name="TestCompositeResource" time="35.170"></testcase>
+		<testcase classname="" name="TestCompositeResource/ClaimBecomesReady" time="15.010"></testcase>
+		<testcase classname="" name="TestCompositeResource/ClaimHasConnectionSecret" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResource/CompositeBecomesReady" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResource/CompositeHasConnectionSecret" time="0.000"></testcase>
+		<testcase classname="" name="TestConfiguration" time="70.090"></testcase>
+		<testcase classname="" name="TestConfiguration/BecomesInstalledAndHealthy" time="70.020"></testcase>
+		<testcase classname="" name="TestConfiguration/RevisionBecomesHealthyAndDeploysObjects" time="0.020"></testcase>
+		<testcase classname="" name="TestConfiguration/DependencyBecomesInstalledAndHealthy" time="0.010"></testcase>
+		<testcase classname="" name="TestCustomResourceDefinitions" time="0.030"></testcase>
+		<testcase classname="" name="TestProvider" time="70.060"></testcase>
+		<testcase classname="" name="TestProvider/BecomesInstalledAndHealthy" time="70.010"></testcase>
+		<testcase classname="" name="TestProvider/RevisionBecomesHealthyAndDeploysObjects" time="0.020"></testcase>
+		<testcase classname="" name="TestVersion" time="0.000"></testcase>
+	</testsuite>
+</testsuites>
