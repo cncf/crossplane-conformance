@@ -130,7 +130,7 @@ contact conformance@cncf.io.
 Combining the steps provided here, the process looks like this:
 
 ```
-$ xp_version=v1.2
+$ xp_version=1.2
 $ prod_name=coolplane
 $ type=distribution
 $ results_dir=${xp_version}/${type}/${prod_name}
