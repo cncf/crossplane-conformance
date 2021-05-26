@@ -1,0 +1,9 @@
+vendor: Upbound
+name: Upbound Universal Crossplane
+version: v1.2.1-up.3
+website_url: https://upbound.io/uxp
+repo_url: https://github.com/upbound/universal-crossplane
+documentation_url: https://cloud.upbound.io/docs/uxp
+product_logo_url: https://github.com/upbound/universal-crossplane/raw/v1.2.1-up.3/docs/media/logo.png
+type: distribution
+description: "Upbound's official enterprise-grade distribution of Crossplane."
