@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="9" failures="0" time="0.210" name="">
+		<properties>
+			<property name="go.version" value="go1.16.4"></property>
+		</properties>
+		<testcase classname="" name="TestPackage" time="0.130"></testcase>
+		<testcase classname="" name="TestPackage/IsInstalledAndHealthy" time="0.010"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs" time="0.030"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ProviderConfigUsage" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Release" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ProviderConfig" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant" time="0.040"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Release" time="0.000"></testcase>
+		<testcase classname="" name="TestVersion" time="0.000"></testcase>
+	</testsuite>
+</testsuites>

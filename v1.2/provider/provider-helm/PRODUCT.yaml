@@ -1,0 +1,8 @@
+vendor: Upbound
+name: Crossplane Provider Helm
+version: v0.7.2
+website_url: https://github.com/crossplane-contrib/provider-helm
+repo_url: https://github.com/crossplane-contrib/provider-helm
+documentation_url: https://github.com/crossplane-contrib/provider-helm#readme
+type: provider
+description: "A Crossplane provider that enables deployment and management of Helm Releases on Kubernetes clusters typically provisioned by Crossplane."
