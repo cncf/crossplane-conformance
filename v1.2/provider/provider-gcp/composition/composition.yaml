@@ -1,0 +1,219 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: conformancetest.gcp.crossplane.io
+spec:
+  writeConnectionSecretsToNamespace: upbound-system
+  compositeTypeRef:
+    apiVersion: gcp.crossplane.io/v1alpha1
+    kind: Conformancetest
+  resources:
+    - base:
+        apiVersion: compute.gcp.crossplane.io/v1beta1
+        kind: Network
+        spec:
+          forProvider:
+            autoCreateSubnetworks: false
+            routingConfig:
+              routingMode: REGIONAL
+    - base:
+        apiVersion: compute.gcp.crossplane.io/v1beta1
+        kind: Subnetwork
+        spec:
+          forProvider:
+            ipCidrRange: "192.168.0.0/24"
+            privateIpGoogleAccess: true
+            secondaryIpRanges:
+              - rangeName: pods
+                ipCidrRange: 10.128.0.0/20
+              - rangeName: services
+                ipCidrRange: 172.16.0.0/16
+            networkSelector:
+              matchControllerRef: true
+      patches:
+        - fromFieldPath: spec.region
+          toFieldPath: spec.forProvider.region
+    - base:
+        apiVersion: compute.gcp.crossplane.io/v1beta1
+        kind: GlobalAddress
+        spec:
+          forProvider:
+            purpose: VPC_PEERING
+            addressType: INTERNAL
+            prefixLength: 16
+            networkSelector:
+              matchControllerRef: true
+    - base:
+        apiVersion: servicenetworking.gcp.crossplane.io/v1beta1
+        kind: Connection
+        spec:
+          forProvider:
+            parent: services/servicenetworking.googleapis.com
+            networkSelector:
+              matchControllerRef: true
+            reservedPeeringRangeSelector:
+              matchControllerRef: true
+
+    - base:
+        apiVersion: iam.gcp.crossplane.io/v1alpha1
+        kind: ServiceAccount
+        spec:
+          forProvider:
+            description: "sa crossplane conformance test"
+    - base:
+        apiVersion: iam.gcp.crossplane.io/v1alpha1
+        kind: ServiceAccountPolicy
+        spec:
+          forProvider:
+            serviceAccountSelector:
+              matchControllerRef: true
+            policy:
+              bindings:
+                - role: roles/iam.serviceAccountAdmin
+                  members:
+                    - user:hasan@upbound.io
+
+    - base:
+        apiVersion: kms.gcp.crossplane.io/v1alpha1
+        kind: KeyRing
+        metadata:
+          annotations:
+            crossplane.io/external-name: conformancetest
+        spec:
+          forProvider:
+            location: global
+    - base:
+        apiVersion: kms.gcp.crossplane.io/v1alpha1
+        kind: CryptoKey
+        spec:
+          forProvider:
+            purpose: ENCRYPT_DECRYPT
+            keyRingSelector:
+              matchControllerRef: true
+    - base:
+        apiVersion: kms.gcp.crossplane.io/v1alpha1
+        kind: CryptoKeyPolicy
+        spec:
+          forProvider:
+            cryptoKeySelector:
+              matchControllerRef: true
+            policy:
+              bindings:
+                - role: roles/cloudkms.cryptoKeyEncrypterDecrypter
+                  serviceAccountMemberSelector:
+                    matchControllerRef: true
+
+    - base:
+        apiVersion: storage.gcp.crossplane.io/v1alpha3
+        kind: Bucket
+        spec:
+          location: US
+          storageClass: MULTI_REGIONAL
+    - base:
+        apiVersion: storage.gcp.crossplane.io/v1alpha1
+        kind: BucketPolicyMember
+        spec:
+          forProvider:
+            bucketSelector:
+              matchControllerRef: true
+            serviceAccountMemberSelector:
+              matchControllerRef: true
+            role: roles/storage.objectAdmin
+    - base:
+        apiVersion: storage.gcp.crossplane.io/v1alpha1
+        kind: BucketPolicy
+        spec:
+          forProvider:
+            bucketSelector:
+              matchControllerRef: true
+            policy:
+              bindings:
+                - role: roles/storage.legacyBucketOwner
+                  members:
+                    - "projectEditor:crossplane-playground"
+                    - "projectOwner:crossplane-playground"
+                - role: roles/storage.legacyBucketReader
+                  members:
+                    - "projectViewer:crossplane-playground"
+                - role: roles/storage.objectAdmin
+                  serviceAccountMemberSelector:
+                    matchControllerRef: true
+
+    - base:
+        apiVersion: container.gcp.crossplane.io/v1beta1
+        kind: GKECluster
+        spec:
+          forProvider:
+            initialClusterVersion: "1.18"
+            location: us-west2
+            masterAuth:
+              username: admin
+            masterAuthorizedNetworksConfig:
+              enabled: false
+            networkConfig:
+              enableIntraNodeVisibility: true
+            loggingService: logging.googleapis.com/kubernetes
+            monitoringService: monitoring.googleapis.com/kubernetes
+            addonsConfig:
+              gcePersistentDiskCsiDriverConfig:
+                enabled: true
+    - base:
+        apiVersion: container.gcp.crossplane.io/v1alpha1
+        kind: NodePool
+        spec:
+          forProvider:
+            initialNodeCount: 1
+            clusterSelector:
+              matchControllerRef: true
+            config:
+              diskType: pd-standard
+              diskSizeGb: 100
+              imageType: COS
+              preemptible: true
+              shieldedInstanceConfig:
+                enableIntegrityMonitoring: true
+                enableSecureBoot: true
+              metadata:
+                disable-legacy-endpoints: "true"
+              oauthScopes:
+                - https://www.googleapis.com/auth/cloud-platform
+          reclaimPolicy: Delete
+      patches:
+        - fromFieldPath: spec.region
+          toFieldPath: spec.forProvider.location
+
+    - base:
+        apiVersion: database.gcp.crossplane.io/v1beta1
+        kind: CloudSQLInstance
+        spec:
+          forProvider:
+            databaseVersion: MYSQL_5_6
+            settings:
+              dataDiskSizeGb: 10
+              dataDiskType: PD_SSD
+              ipConfiguration:
+                ipv4Enabled: true
+              tier: db-n1-standard-1
+      patches:
+        - fromFieldPath: spec.region
+          toFieldPath: spec.forProvider.region
+    - base:
+        apiVersion: cache.gcp.crossplane.io/v1beta1
+        kind: CloudMemorystoreInstance
+        spec:
+          forProvider:
+            #authorizedNetwork: projects/x
+            memorySizeGb: 1
+            redisVersion: REDIS_5_0
+            tier: BASIC
+      patches:
+        - fromFieldPath: spec.region
+          toFieldPath: spec.forProvider.region
+
+    - base:
+        apiVersion: pubsub.gcp.crossplane.io/v1alpha1
+        kind: Topic
+        spec:
+          forProvider:
+            labels:
+              conformance: test

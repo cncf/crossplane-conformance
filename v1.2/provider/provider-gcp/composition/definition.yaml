@@ -1,0 +1,28 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: CompositeResourceDefinition
+metadata:
+  name: conformancetests.gcp.crossplane.io
+spec:
+  group: gcp.crossplane.io
+  names:
+    kind: Conformancetest
+    listKind: ConformancetestList
+    plural: conformancetests
+    singular: conformancetest
+  versions:
+    - name: v1alpha1
+      served: true
+      referenceable: true
+      schema:
+        openAPIV3Schema:
+          description: Managed resources for provider-gcp crossplane conformance
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                region:
+                  type: string
+                  description: region
+              required:
+                - region

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="41" failures="0" time="0.440" name="">
+		<properties>
+			<property name="go.version" value="go1.16.4"></property>
+		</properties>
+		<testcase classname="" name="TestPackage" time="0.230"></testcase>
+		<testcase classname="" name="TestPackage/IsInstalledAndHealthy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs" time="0.070"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/CloudMemorystoreInstance" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Connection" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/CloudSQLInstance" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ProviderConfig" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/KeyRing" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ServiceAccountPolicy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Bucket" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/CryptoKeyPolicy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/BucketPolicy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ProviderConfigUsage" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Topic" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Subnetwork" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/NodePool" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/CryptoKey" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/GlobalAddress" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Network" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/GKECluster" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/BucketPolicyMember" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ServiceAccount" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant" time="0.140"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/CloudMemorystoreInstance" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Connection" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/CloudSQLInstance" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/KeyRing" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/ServiceAccountPolicy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Bucket" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/CryptoKeyPolicy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/BucketPolicy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Topic" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Subnetwork" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/NodePool" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/CryptoKey" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/GlobalAddress" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Network" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/GKECluster" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/BucketPolicyMember" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/ServiceAccount" time="0.000"></testcase>
+		<testcase classname="" name="TestVersion" time="0.000"></testcase>
+	</testsuite>
+</testsuites>

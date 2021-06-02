@@ -1,0 +1,6 @@
+apiVersion: gcp.crossplane.io/v1alpha1
+kind: Conformancetest
+metadata:
+  name: conformancetest1
+spec:
+  region: us-central1

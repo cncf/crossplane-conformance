@@ -1,0 +1,8 @@
+vendor: Upbound
+name: Crossplane Provider GCP
+version: v0.17.1
+website_url: https://github.com/crossplane/provider-gcp
+repo_url: https://github.com/crossplane/provider-gcp
+documentation_url: https://github.com/crossplane/provider-gcp#provider-gcp
+type: provider
+description: "A Crossplane provider that enables deployment and management of infrastructure resources on Google Cloud Platform (GCP)"
