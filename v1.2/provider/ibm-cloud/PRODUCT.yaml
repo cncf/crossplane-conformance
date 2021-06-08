@@ -1,0 +1,9 @@
+vendor: IBM
+name: provider-ibm-cloud
+version: v0.3.0
+website_url: https://www.ibm.com
+repo_url: https://github.com/crossplane-contrib/provider-ibm-cloud
+documentation_url: https://github.com/crossplane-contrib/provider-ibm-cloud
+product_logo_url: N/A
+type: provider
+description: "Crossplane infrastructure provider for IBM Cloud."
