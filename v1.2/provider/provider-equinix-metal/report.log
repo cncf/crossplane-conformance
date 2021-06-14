@@ -1,0 +1,32 @@
+=== RUN   TestPackage
+=== RUN   TestPackage/IsInstalledAndHealthy
+    provider_test.go:69: Testing that the provider's Healthy and Installed status conditions are 'True'.
+    provider_test.go:85: Provider "equinix-provider-equinix-metal" is Healthy and Installed
+=== RUN   TestPackage/DeploysConformantCRDs
+    provider_test.go:93: Testing that ProviderRevision "equinix-provider-equinix-metal-76cb7b793acb" delivers only conformant CRDs.
+=== RUN   TestPackage/DeploysConformantCRDs/ProviderConfig
+=== RUN   TestPackage/DeploysConformantCRDs/ProviderConfigUsage
+=== RUN   TestPackage/DeploysConformantCRDs/VirtualNetwork
+=== RUN   TestPackage/DeploysConformantCRDs/Assignment
+=== RUN   TestPackage/DeploysConformantCRDs/Device
+=== RUN   TestPackage/ManagedResourcesAppearConformant
+    provider_test.go:144: Testing that managed resources defined by ProviderRevision "equinix-provider-equinix-metal-76cb7b793acb" appear conformant.
+=== RUN   TestPackage/ManagedResourcesAppearConformant/VirtualNetwork
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Assignment
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Device
+--- PASS: TestPackage (0.04s)
+    --- PASS: TestPackage/IsInstalledAndHealthy (0.00s)
+    --- PASS: TestPackage/DeploysConformantCRDs (0.01s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ProviderConfig (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ProviderConfigUsage (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/VirtualNetwork (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Assignment (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Device (0.00s)
+    --- PASS: TestPackage/ManagedResourcesAppearConformant (0.02s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/VirtualNetwork (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Assignment (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Device (0.00s)
+=== RUN   TestVersion
+    version_test.go:25: Conformance test version: v1.2.2-cf.1
+--- PASS: TestVersion (0.00s)
+PASS

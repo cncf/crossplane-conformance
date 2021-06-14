@@ -1,6 +1,6 @@
 vendor: Equinix
 name: Crossplane Provider Equinix Metal
-version: v0.0.9
+version: v0.0.11
 website_url: https://github.com/crossplane-contrib/provider-equinix-metal
 repo_url: https://github.com/crossplane-contrib/provider-equinix-metal
 documentation_url: https://github.com/crossplane-contrib/provider-equinix-metal#crossplane-provider-equinix-metal

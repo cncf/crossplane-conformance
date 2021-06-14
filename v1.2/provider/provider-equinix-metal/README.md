@@ -1,4 +1,4 @@
-# Crossplane Provider Equinix Metal v0.0.9 Conformance Results
+# Crossplane Provider Equinix Metal v0.0.11 Conformance Results
 
 The following steps can be undertaken to obtain the provided conformance results:
 
@@ -17,10 +17,10 @@ helm repo update
 helm install crossplane --namespace crossplane-system crossplane-stable/crossplane --version 1.2.2
 ```
 
-3. Deploy provider-equinix-metal version v0.0.9
+3. Deploy provider-equinix-metal version v0.0.11
 
 ```
-kubectl crossplane install provider registry.upbound.io/equinix/provider-equinix-metal:v0.0.9
+kubectl crossplane install provider registry.upbound.io/equinix/provider-equinix-metal:v0.0.11
 ```
 
 
