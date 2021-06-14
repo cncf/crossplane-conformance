@@ -1,0 +1,55 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: conformancetest.metal.equinix.com
+spec:
+  writeConnectionSecretsToNamespace: crossplane-system
+  compositeTypeRef:
+    apiVersion: metal.equinix.com/v1alpha1
+    kind: Conformancetest
+  resources:
+    - base:
+        apiVersion: server.metal.equinix.com/v1alpha2
+        kind: Device
+        spec:
+          forProvider:
+            hostname: crossplane-conformance
+            plan: c3.small.x86
+            operatingSystem: ubuntu_20_04
+            billingCycle: hourly
+            locked: false
+            networkType: hybrid
+            tags:
+            - crossplane
+          providerConfigRef:
+            name: equinix-metal-provider
+          writeConnectionSecretToRef:
+            name: crossplane-conformance
+            namespace: crossplane-system
+          reclaimPolicy: Delete
+      patches:
+        - fromFieldPath: spec.metro
+          toFieldPath: spec.forProvider.metro
+    - base:
+        apiVersion: vlan.metal.equinix.com/v1alpha1
+        kind: VirtualNetwork
+        spec:
+          forProvider:
+            description: conformance provisioned VLAN
+          providerConfigRef:
+            name: equinix-metal-provider
+      patches:
+        - fromFieldPath: spec.metro
+          toFieldPath: spec.forProvider.metro
+    - base:
+        apiVersion: ports.metal.equinix.com/v1alpha1
+        kind: Assignment
+        spec:
+          forProvider:
+            deviceIdSelector:
+              matchControllerRef: true
+            virtualNetworkIdSelector:
+              matchControllerRef: true
+            name: eth1
+          providerConfigRef:
+            name: equinix-metal-provider

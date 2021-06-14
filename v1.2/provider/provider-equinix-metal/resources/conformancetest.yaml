@@ -1,0 +1,6 @@
+apiVersion: metal.equinix.com/v1alpha1
+kind: Conformancetest
+metadata:
+  name: conformancetest1
+spec:
+  metro: sv

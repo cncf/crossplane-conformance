@@ -1,0 +1,28 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: CompositeResourceDefinition
+metadata:
+  name: conformancetests.metal.equinix.com
+spec:
+  group: metal.equinix.com
+  names:
+    kind: Conformancetest
+    listKind: ConformancetestList
+    plural: conformancetests
+    singular: conformancetest
+  versions:
+    - name: v1alpha1
+      served: true
+      referenceable: true
+      schema:
+        openAPIV3Schema:
+          description: Managed resources for provider-equinix-metal crossplane conformance
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                metro:
+                  type: string
+                  description: metro
+              required:
+                - metro
