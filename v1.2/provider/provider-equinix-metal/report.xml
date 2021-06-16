@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="13" failures="0" time="0.070" name="">
+		<properties>
+			<property name="go.version" value="go1.16.5"></property>
+		</properties>
+		<testcase classname="" name="TestPackage" time="0.040"></testcase>
+		<testcase classname="" name="TestPackage/IsInstalledAndHealthy" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs" time="0.010"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ProviderConfig" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/ProviderConfigUsage" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/VirtualNetwork" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Assignment" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/DeploysConformantCRDs/Device" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant" time="0.020"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/VirtualNetwork" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Assignment" time="0.000"></testcase>
+		<testcase classname="" name="TestPackage/ManagedResourcesAppearConformant/Device" time="0.000"></testcase>
+		<testcase classname="" name="TestVersion" time="0.000"></testcase>
+	</testsuite>
+</testsuites>

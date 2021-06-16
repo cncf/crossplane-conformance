@@ -1,0 +1,8 @@
+vendor: Equinix
+name: Crossplane Provider Equinix Metal
+version: v0.0.11
+website_url: https://github.com/crossplane-contrib/provider-equinix-metal
+repo_url: https://github.com/crossplane-contrib/provider-equinix-metal
+documentation_url: https://github.com/crossplane-contrib/provider-equinix-metal#crossplane-provider-equinix-metal
+type: provider
+description: "A Crossplane provider that enables deployment and management of infrastructure resources on Equinix Metal"
