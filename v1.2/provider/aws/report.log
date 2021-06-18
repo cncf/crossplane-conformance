@@ -1,0 +1,296 @@
+=== RUN   TestPackage
+=== RUN   TestPackage/IsInstalledAndHealthy
+    provider_test.go:69: Testing that the provider's Healthy and Installed status conditions are 'True'.
+    provider_test.go:85: Provider "crossplane-provider-aws" is Healthy and Installed
+=== RUN   TestPackage/DeploysConformantCRDs
+    provider_test.go:93: Testing that ProviderRevision "crossplane-provider-aws-dd1e35810a48" delivers only conformant CRDs.
+=== RUN   TestPackage/DeploysConformantCRDs/VPCCIDRBlock
+=== RUN   TestPackage/DeploysConformantCRDs/RDSInstance
+=== RUN   TestPackage/DeploysConformantCRDs/RepositoryPolicy
+=== RUN   TestPackage/DeploysConformantCRDs/IAMGroup
+=== RUN   TestPackage/DeploysConformantCRDs/IAMAccessKey
+=== RUN   TestPackage/DeploysConformantCRDs/VPCLink
+=== RUN   TestPackage/DeploysConformantCRDs/IAMRole
+=== RUN   TestPackage/DeploysConformantCRDs/ProviderConfigUsage
+=== RUN   TestPackage/DeploysConformantCRDs/Activity
+=== RUN   TestPackage/DeploysConformantCRDs/RouteResponse
+=== RUN   TestPackage/DeploysConformantCRDs/IAMRolePolicyAttachment
+=== RUN   TestPackage/DeploysConformantCRDs/CertificateAuthority
+=== RUN   TestPackage/DeploysConformantCRDs/InternetGateway
+=== RUN   TestPackage/DeploysConformantCRDs/Route
+=== RUN   TestPackage/DeploysConformantCRDs/IAMUserPolicyAttachment
+=== RUN   TestPackage/DeploysConformantCRDs/ResourceRecordSet
+=== RUN   TestPackage/DeploysConformantCRDs/Authorizer
+=== RUN   TestPackage/DeploysConformantCRDs/Backup
+=== RUN   TestPackage/DeploysConformantCRDs/FargateProfile
+=== RUN   TestPackage/DeploysConformantCRDs/DBCluster
+=== RUN   TestPackage/DeploysConformantCRDs/NodeGroup
+=== RUN   TestPackage/DeploysConformantCRDs/NATGateway
+=== RUN   TestPackage/DeploysConformantCRDs/Distribution
+=== RUN   TestPackage/DeploysConformantCRDs/Integration
+=== RUN   TestPackage/DeploysConformantCRDs/DBParameterGroup
+=== RUN   TestPackage/DeploysConformantCRDs/GlobalTable
+=== RUN   TestPackage/DeploysConformantCRDs/ProviderConfig
+=== RUN   TestPackage/DeploysConformantCRDs/PublicDNSNamespace
+=== RUN   TestPackage/DeploysConformantCRDs/OpenIDConnectProvider
+=== RUN   TestPackage/DeploysConformantCRDs/SecurityGroup
+=== RUN   TestPackage/DeploysConformantCRDs/Cluster
+=== RUN   TestPackage/DeploysConformantCRDs/Model
+=== RUN   TestPackage/DeploysConformantCRDs/IAMPolicy
+=== RUN   TestPackage/DeploysConformantCRDs/Subnet
+=== RUN   TestPackage/DeploysConformantCRDs/CacheSubnetGroup
+=== RUN   TestPackage/DeploysConformantCRDs/Table
+=== RUN   TestPackage/DeploysConformantCRDs/IAMGroupPolicyAttachment
+=== RUN   TestPackage/DeploysConformantCRDs/API
+=== RUN   TestPackage/DeploysConformantCRDs/VPC
+=== RUN   TestPackage/DeploysConformantCRDs/Deployment
+=== RUN   TestPackage/DeploysConformantCRDs/IAMUser
+=== RUN   TestPackage/DeploysConformantCRDs/CacheCluster
+=== RUN   TestPackage/DeploysConformantCRDs/GlobalCluster
+=== RUN   TestPackage/DeploysConformantCRDs/PrivateDNSNamespace
+=== RUN   TestPackage/DeploysConformantCRDs/Stage
+=== RUN   TestPackage/DeploysConformantCRDs/Address
+=== RUN   TestPackage/DeploysConformantCRDs/HTTPNamespace
+=== RUN   TestPackage/DeploysConformantCRDs/Function
+=== RUN   TestPackage/DeploysConformantCRDs/Secret
+=== RUN   TestPackage/DeploysConformantCRDs/DBSubnetGroup
+=== RUN   TestPackage/DeploysConformantCRDs/IntegrationResponse
+=== RUN   TestPackage/DeploysConformantCRDs/IAMGroupUserMembership
+=== RUN   TestPackage/DeploysConformantCRDs/Bucket
+=== RUN   TestPackage/DeploysConformantCRDs/Repository
+=== RUN   TestPackage/DeploysConformantCRDs/SNSTopic
+=== RUN   TestPackage/DeploysConformantCRDs/ELB
+=== RUN   TestPackage/DeploysConformantCRDs/HostedZone
+=== RUN   TestPackage/DeploysConformantCRDs/ELBAttachment
+=== RUN   TestPackage/DeploysConformantCRDs/SNSSubscription
+=== RUN   TestPackage/DeploysConformantCRDs/APIMapping
+=== RUN   TestPackage/DeploysConformantCRDs/RouteTable
+=== RUN   TestPackage/DeploysConformantCRDs/FileSystem
+=== RUN   TestPackage/DeploysConformantCRDs/BucketPolicy
+=== RUN   TestPackage/DeploysConformantCRDs/Cluster#01
+=== RUN   TestPackage/DeploysConformantCRDs/Queue
+=== RUN   TestPackage/DeploysConformantCRDs/Certificate
+=== RUN   TestPackage/DeploysConformantCRDs/Key
+=== RUN   TestPackage/DeploysConformantCRDs/CertificateAuthorityPermission
+=== RUN   TestPackage/DeploysConformantCRDs/StateMachine
+=== RUN   TestPackage/DeploysConformantCRDs/DomainName
+=== RUN   TestPackage/DeploysConformantCRDs/ReplicationGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant
+    provider_test.go:144: Testing that managed resources defined by ProviderRevision "crossplane-provider-aws-dd1e35810a48" appear conformant.
+=== RUN   TestPackage/ManagedResourcesAppearConformant/VPCCIDRBlock
+=== RUN   TestPackage/ManagedResourcesAppearConformant/RDSInstance
+=== RUN   TestPackage/ManagedResourcesAppearConformant/RepositoryPolicy
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMAccessKey
+=== RUN   TestPackage/ManagedResourcesAppearConformant/VPCLink
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMRole
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Activity
+=== RUN   TestPackage/ManagedResourcesAppearConformant/RouteResponse
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMRolePolicyAttachment
+=== RUN   TestPackage/ManagedResourcesAppearConformant/CertificateAuthority
+=== RUN   TestPackage/ManagedResourcesAppearConformant/InternetGateway
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Route
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMUserPolicyAttachment
+=== RUN   TestPackage/ManagedResourcesAppearConformant/ResourceRecordSet
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Authorizer
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Backup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/FargateProfile
+=== RUN   TestPackage/ManagedResourcesAppearConformant/DBCluster
+=== RUN   TestPackage/ManagedResourcesAppearConformant/NodeGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/NATGateway
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Distribution
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Integration
+=== RUN   TestPackage/ManagedResourcesAppearConformant/DBParameterGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/GlobalTable
+=== RUN   TestPackage/ManagedResourcesAppearConformant/PublicDNSNamespace
+=== RUN   TestPackage/ManagedResourcesAppearConformant/OpenIDConnectProvider
+=== RUN   TestPackage/ManagedResourcesAppearConformant/SecurityGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Cluster
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Model
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMPolicy
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Subnet
+=== RUN   TestPackage/ManagedResourcesAppearConformant/CacheSubnetGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Table
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMGroupPolicyAttachment
+=== RUN   TestPackage/ManagedResourcesAppearConformant/API
+=== RUN   TestPackage/ManagedResourcesAppearConformant/VPC
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Deployment
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMUser
+=== RUN   TestPackage/ManagedResourcesAppearConformant/CacheCluster
+=== RUN   TestPackage/ManagedResourcesAppearConformant/GlobalCluster
+=== RUN   TestPackage/ManagedResourcesAppearConformant/PrivateDNSNamespace
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Stage
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Address
+=== RUN   TestPackage/ManagedResourcesAppearConformant/HTTPNamespace
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Function
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Secret
+=== RUN   TestPackage/ManagedResourcesAppearConformant/DBSubnetGroup
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IntegrationResponse
+=== RUN   TestPackage/ManagedResourcesAppearConformant/IAMGroupUserMembership
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Bucket
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Repository
+=== RUN   TestPackage/ManagedResourcesAppearConformant/SNSTopic
+=== RUN   TestPackage/ManagedResourcesAppearConformant/ELB
+=== RUN   TestPackage/ManagedResourcesAppearConformant/HostedZone
+=== RUN   TestPackage/ManagedResourcesAppearConformant/ELBAttachment
+=== RUN   TestPackage/ManagedResourcesAppearConformant/SNSSubscription
+=== RUN   TestPackage/ManagedResourcesAppearConformant/APIMapping
+=== RUN   TestPackage/ManagedResourcesAppearConformant/RouteTable
+=== RUN   TestPackage/ManagedResourcesAppearConformant/FileSystem
+=== RUN   TestPackage/ManagedResourcesAppearConformant/BucketPolicy
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Cluster#01
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Queue
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Certificate
+=== RUN   TestPackage/ManagedResourcesAppearConformant/Key
+=== RUN   TestPackage/ManagedResourcesAppearConformant/CertificateAuthorityPermission
+=== RUN   TestPackage/ManagedResourcesAppearConformant/StateMachine
+=== RUN   TestPackage/ManagedResourcesAppearConformant/DomainName
+=== RUN   TestPackage/ManagedResourcesAppearConformant/ReplicationGroup
+--- PASS: TestPackage (2.26s)
+    --- PASS: TestPackage/IsInstalledAndHealthy (0.00s)
+    --- PASS: TestPackage/DeploysConformantCRDs (0.34s)
+        --- PASS: TestPackage/DeploysConformantCRDs/VPCCIDRBlock (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/RDSInstance (0.01s)
+        --- PASS: TestPackage/DeploysConformantCRDs/RepositoryPolicy (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMGroup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMAccessKey (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/VPCLink (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMRole (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ProviderConfigUsage (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Activity (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/RouteResponse (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMRolePolicyAttachment (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/CertificateAuthority (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/InternetGateway (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Route (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMUserPolicyAttachment (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ResourceRecordSet (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Authorizer (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Backup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/FargateProfile (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/DBCluster (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/NodeGroup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/NATGateway (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Distribution (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Integration (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/DBParameterGroup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/GlobalTable (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ProviderConfig (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/PublicDNSNamespace (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/OpenIDConnectProvider (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/SecurityGroup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Cluster (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Model (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMPolicy (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Subnet (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/CacheSubnetGroup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Table (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMGroupPolicyAttachment (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/API (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/VPC (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Deployment (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMUser (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/CacheCluster (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/GlobalCluster (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/PrivateDNSNamespace (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Stage (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Address (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/HTTPNamespace (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Function (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Secret (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/DBSubnetGroup (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IntegrationResponse (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/IAMGroupUserMembership (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Bucket (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Repository (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/SNSTopic (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ELB (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/HostedZone (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ELBAttachment (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/SNSSubscription (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/APIMapping (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/RouteTable (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/FileSystem (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/BucketPolicy (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Cluster#01 (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Queue (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Certificate (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/Key (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/CertificateAuthorityPermission (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/StateMachine (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/DomainName (0.00s)
+        --- PASS: TestPackage/DeploysConformantCRDs/ReplicationGroup (0.00s)
+    --- PASS: TestPackage/ManagedResourcesAppearConformant (1.87s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/VPCCIDRBlock (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/RDSInstance (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/RepositoryPolicy (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMGroup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMAccessKey (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/VPCLink (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMRole (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Activity (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/RouteResponse (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMRolePolicyAttachment (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/CertificateAuthority (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/InternetGateway (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Route (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMUserPolicyAttachment (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/ResourceRecordSet (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Authorizer (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Backup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/FargateProfile (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/DBCluster (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/NodeGroup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/NATGateway (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Distribution (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Integration (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/DBParameterGroup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/GlobalTable (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/PublicDNSNamespace (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/OpenIDConnectProvider (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/SecurityGroup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Cluster (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Model (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMPolicy (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Subnet (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/CacheSubnetGroup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Table (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMGroupPolicyAttachment (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/API (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/VPC (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Deployment (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMUser (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/CacheCluster (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/GlobalCluster (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/PrivateDNSNamespace (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Stage (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Address (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/HTTPNamespace (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Function (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Secret (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/DBSubnetGroup (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IntegrationResponse (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/IAMGroupUserMembership (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Bucket (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Repository (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/SNSTopic (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/ELB (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/HostedZone (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/ELBAttachment (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/SNSSubscription (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/APIMapping (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/RouteTable (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/FileSystem (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/BucketPolicy (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Cluster#01 (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Queue (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Certificate (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/Key (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/CertificateAuthorityPermission (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/StateMachine (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/DomainName (0.00s)
+        --- PASS: TestPackage/ManagedResourcesAppearConformant/ReplicationGroup (0.00s)
+=== RUN   TestVersion
+    version_test.go:25: Conformance test version: v1.2.2-cf.1
+--- PASS: TestVersion (0.00s)
+PASS
