@@ -1,0 +1,8 @@
+vendor: Upbound
+name: Crossplane Provider AWS
+version: v0.19.0
+website_url: https://github.com/crossplane/provider-aws
+repo_url: https://github.com/crossplane/provider-aws
+documentation_url: https://github.com/crossplane/provider-aws#provider-aws
+type: provider
+description: "A Crossplane provider that enables deployment and management of infrastructure resources on Amazon Web Services (AWS)"
