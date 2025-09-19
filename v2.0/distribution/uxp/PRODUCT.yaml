@@ -1,0 +1,9 @@
+vendor: Upbound
+name: Upbound Crossplane
+version: 2.0.2-up.4
+website_url: https://www.upbound.io/uxp-2
+repo_url: https://github.com/upbound/upbound-crossplane
+documentation_url: https://docs.upbound.io/manuals/uxp/overview/
+product_logo_url: https://github.com/upbound/upbound-crossplane/raw/v2.0.2-up.4/docs/media/logo.png
+type: distribution
+description: "Upbound Crossplane (UXP) is the AI-native distribution of Crossplane by Upbound."

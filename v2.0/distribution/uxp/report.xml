@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="56" failures="0" time="703.520" name="">
+		<properties>
+			<property name="go.version" value="go1.16.15"></property>
+		</properties>
+		<testcase classname="" name="TestCompositeResourceDefinitionLegacy" time="10.030"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionLegacy/BecomesEstablishedAndOffered" time="10.010"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionLegacy/CRDIsCreatedForXR" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionLegacy/CRDIsCreatedForXRC" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceLegacy" time="31.120"></testcase>
+		<testcase classname="" name="TestCompositeResourceLegacy/ClaimBecomesReady" time="15.020"></testcase>
+		<testcase classname="" name="TestCompositeResourceLegacy/ClaimHasConnectionSecret" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceLegacy/CompositeBecomesReady" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceLegacy/CompositeHasConnectionSecret" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionNamespace" time="40.100"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionNamespace/BecomesEstablished" time="10.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionNamespace/CRDIsCreatedForXR" time="0.040"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionNamespace/NoCRDIsCreatedForXRC" time="30.010"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionCluster" time="40.080"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionCluster/BecomesEstablished" time="10.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionCluster/CRDIsCreatedForXR" time="0.040"></testcase>
+		<testcase classname="" name="TestCompositeResourceDefinitionCluster/NoCRDIsCreatedForXRC" time="30.010"></testcase>
+		<testcase classname="" name="TestCompositeResourceNamespace" time="56.100"></testcase>
+		<testcase classname="" name="TestCompositeResourceNamespace/CompositeBecomesReadyWithValues" time="40.020"></testcase>
+		<testcase classname="" name="TestCompositeResourceNamespace/CompositeResourceRefs" time="0.000"></testcase>
+		<testcase classname="" name="TestCompositeResourceCluster" time="36.090"></testcase>
+		<testcase classname="" name="TestCompositeResourceCluster/CompositeBecomesReadyWithValues" time="20.020"></testcase>
+		<testcase classname="" name="TestCompositeResourceCluster/CompositeResourceRefs" time="0.010"></testcase>
+		<testcase classname="" name="TestConfiguration" time="10.030"></testcase>
+		<testcase classname="" name="TestConfiguration/BecomesInstalledAndHealthy" time="10.000"></testcase>
+		<testcase classname="" name="TestConfiguration/RevisionBecomesHealthyAndDeploysObjects" time="0.000"></testcase>
+		<testcase classname="" name="TestConfiguration/DependenciesBecomesInstalledAndHealthy" time="0.000"></testcase>
+		<testcase classname="" name="TestCustomResourceDefinitions" time="0.090"></testcase>
+		<testcase classname="" name="TestFunction" time="10.030"></testcase>
+		<testcase classname="" name="TestFunction/BecomesInstalledAndHealthy" time="10.010"></testcase>
+		<testcase classname="" name="TestFunction/RevisionBecomesHealthyAndDeploysObjects" time="0.010"></testcase>
+		<testcase classname="" name="TestOperation" time="36.040"></testcase>
+		<testcase classname="" name="TestOperation/OperationSucceeds" time="30.000"></testcase>
+		<testcase classname="" name="TestOperation/AppliedResourceRefs" time="0.000"></testcase>
+		<testcase classname="" name="TestWatchOperation" time="26.080"></testcase>
+		<testcase classname="" name="TestWatchOperation/WatchOperationBecomesActive" time="10.020"></testcase>
+		<testcase classname="" name="TestWatchOperation/WatchDetectsResourceAndTriggersOperation" time="10.020"></testcase>
+		<testcase classname="" name="TestCronOperation" time="36.070"></testcase>
+		<testcase classname="" name="TestCronOperation/CronOperationBecomesActive" time="10.010"></testcase>
+		<testcase classname="" name="TestCronOperation/CronSchedulesAndCompletesOperation" time="20.010"></testcase>
+		<testcase classname="" name="TestProvider" time="10.040"></testcase>
+		<testcase classname="" name="TestProvider/BecomesInstalledAndHealthy" time="10.020"></testcase>
+		<testcase classname="" name="TestProvider/RevisionBecomesHealthyAndDeploysObjects" time="0.010"></testcase>
+		<testcase classname="" name="TestUsageProtectionNamespaced" time="16.070"></testcase>
+		<testcase classname="" name="TestUsageProtectionNamespaced/UsageBecomesReadyAvailable" time="5.000"></testcase>
+		<testcase classname="" name="TestUsageProtectionNamespaced/DeletionBlockedWhileInUse" time="0.010"></testcase>
+		<testcase classname="" name="TestUsageProtectionNamespaced/testDeletionAllowedAfterUsingDeleted" time="5.010"></testcase>
+		<testcase classname="" name="TestUsageProtectionCluster" time="15.080"></testcase>
+		<testcase classname="" name="TestUsageProtectionCluster/ClusterUsageBecomesReadyAvailable" time="5.010"></testcase>
+		<testcase classname="" name="TestUsageProtectionCluster/DeletionBlockedWhileInUse" time="0.020"></testcase>
+		<testcase classname="" name="TestUsageProtectionCluster/testDeletionAllowedAfterUsingDeleted" time="10.030"></testcase>
+		<testcase classname="" name="TestUsageLegacy" time="15.060"></testcase>
+		<testcase classname="" name="TestUsageLegacy/UsageBecomesReadyAvailable" time="5.010"></testcase>
+		<testcase classname="" name="TestUsageLegacy/DeletionBlockedWhileInUse" time="0.010"></testcase>
+		<testcase classname="" name="TestUsageLegacy/testDeletionAllowedAfterUsingDeleted" time="10.020"></testcase>
+		<testcase classname="" name="TestVersion" time="0.000"></testcase>
+	</testsuite>
+</testsuites>
